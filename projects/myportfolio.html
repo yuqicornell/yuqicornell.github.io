@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- @TODO Link the favicon via href -->
+    <!-- <link rel="icon" type="image/png" href="" size="16x16"> -->
+
+    <meta charset="UTF-8">
+    <title>Yu Qi</title>
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab|Noto+Sans' rel='stylesheet' type='text/css' />
+
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/project.css" />
+
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../src/mixitup/src/jquery.mixitup.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <!--Adds a tab icon-->
+    <link rel="shortcut icon" href="../img/thumbnails/yq_small.png">
+</head>
+
+<body>
+    <!--
+
+        Navigation
+
+        -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+         <a class="navbar-brand" href="../index.html"><img id="yqLogo" src="../img/thumbnails/YQ.png" alt="Yu Qi" /></a>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+                <!-- @TODO Insert your logo here 
+                <a class="navbar-brand" href="index.html"><img id="yqLogo" src="img/thumbnails/YQ.png" alt="Yu Qi" /></a>
+            -->
+
+            <!-- This is where you insert your navbar items. Class active and span current should only go around the active tab.-->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#Container">Portfolio</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                    <li><a href="../YuQi_Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--
+
+        Main Content Goes here
+
+    -->
+
+    <div class="jumbotron" id="projectHeader">
+        <div id="welcome">
+            <!-- Type your welcome message here -->
+            <h1 id="projectTitle">Design My Portfolio</h1>
+            <p id="projectDesc">How my portfolio (Where you're right now!) was designed and built!
+        </div>
+
+    </div>
+
+    <div id="bcWrapper">
+        <ol class="breadcrumb">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#Container">Portfolio</a></li>
+            <li class="active">My Portfolio</li>
+        </ol>
+    </div>
+
+    <!-- Fill in the dots with your projects  Yessir
+        I made some of the thumbnails in orange color, but it can be changed easily if needed-->
+    <div id="mainContent">
+        <div id="overview">
+            <p><span class="overviewCategory">Time: </span> December 2015 - January 2016</p>
+            <p><span class="overviewCategory">Team: </span>Myself and <a href="https://www.linkedin.com/in/samueltung" target="_blank">Sam Tung</a> (My best friend who gave me incredible technical support)</p>
+            <p><span class="overviewCategory">Tools: </span>Paper &amp; Pen, Sketch App, Photoshop, Illustrator; JavaScript (JQuery.js, D3.js), HTML5, CSS3, Bootstrap</p>
+            <p id="d3-demobutton"><span class="overviewCategory">Product: </span>My Portfolio website you are currently on</p>
+        </div>
+
+        <hr />
+
+        <div id="portfolio-users">
+            <h3 class="sectionTitle">Understanding Users</h3>
+            <p>This website was built for job searching purposes. The primary purposes for people who come to my website: 
+            </p>
+            <ul id="stepList">
+                <li>Check out what I have done (Portfolio)
+                </li>
+                <li>Get an idea/impression of who I am
+                </li>
+                <li>Use this site as a port for more resources (e.g. Resume and LinkedIn)
+                </li>
+                <li>Just get curious and interested
+                </li>
+            </ul>
+        </div>
+
+        <hr />
+
+        <div id="portfolio-element">
+            <h3 class="sectionTitle">Design Concepts &amp; Elements</h3>
+            <p>I used minimalist web design principles to design this website. I want my users to get to the point and find what they need right away without much distractions.
+                So I reduced the elements of my website to the ones that are truly needed, so users can interact with less clicks:
+            </p>
+            
+            <p><strong>About me:</strong> I originally envisioned this section to be a separate page, but then I realized people may be interested to my portfolio more. 
+            The current design is a small section on the homepage that gives users a quick idea of who I am without distracting them too much. The design of this section was inspired by Tingting Wu's portfolio.
+            </p>
+            <p><strong>Portfolio:</strong> 
+            <ul id="stepList">
+                <li>This is the most important section of the whole website. As most people are directed to this website mainly to view this section. So it's in a very 
+                    prominent location on the homepage.
+                </li>
+                <li>My projects can be easily categorized into UX Research, UX Design, and Front-End Development. 
+                    By providing a filter functionality, it's much easier for users to find projects in different categories. 
+                </li>
+                <li>Rather than using modal windows to display details of each project, I decided to direct users to a separate page for full details. 
+                    Yes, this may require my users to go to another page and then come back to see other projects, but this allows me to present a full picture of each project. 
+                    Also, with a clear site structure, this design is not going to get my users lost.
+                </li>
+                <li> Because I lead my users to a separate page for each project, I assumed my users need to get back to the homepage and check other projects. 
+                    Therefore, other than the main navigation on the top of each project, I put a breadcrumb navigation on each page to give my users a clear idea of the site hierarchy and where they are.
+                </li>
+            </ul>
+            </p>
+            <p><strong>Contact: </strong> A necessary section for every personal website. I left my contact information with social networks. I didn't use forms, 
+            because my personal experience is that most submitted online forms will end up in black holes.  
+            </p>
+            <p><strong>Resume: </strong> After seeing many online portfolios, I found that linking resume to a pdf file is a more conventional design. 
+            It's easy for people to download or print. So, for this section, I believe following the convention is a good choice.
+            </p>
+        </div>
+
+        <hr />
+
+        <div id="portfolio-process">
+            <h3 class="sectionTitle">Design Process</h3>
+            <p>I. Paper sketches
+            </p>
+            <p>II. Sketch Application:
+            </p>
+            <div class="sampleImages" id="sketchUI">
+                <figure>
+                    <img src="../img/portfolio/portfolio_sketch.png" alt="Screen capture for Sketch art boards"" />
+                    <figcaption><em>Fig 1. Screenshot of Different Artboards in Sketch Application</em></figcaption>
+                </figure>
+            </div>
+            <hr id="btpics"/>
+            <div class="sampleImages">
+                <figure>
+                    <img src="../img/portfolio/Index-v3-font.png" alt="Screen capture for a sample artboard" />
+                    <figcaption><em>Fig 2. Sample Artboard: High Fidelity Prototype - Iteration 3</em></figcaption>
+                </figure>
+            </div>
+            <hr id="btpics"/>
+            <div class="sampleImages">
+                <figure>
+                    <img src="../img/portfolio/NaviBar.png" alt="Screen capture for a sample artboard" />
+                    <figcaption><em>Fig 3. Sample Artboard: Navigation Bar Design Variations</em></figcaption>
+                </figure>
+            </div>
+            <hr id="btpics"/>
+            <div class="sampleImages">
+                <figure>
+                    <img src="../img/portfolio/sitelogo.png" alt="Logo design" />
+                    <figcaption><em>Fig 4. Site Logo Designs: After Navigation Bar Shrink, Before Shrink, Browser Tab Logo</em></figcaption>
+                </figure>
+            </div>
+        </div>
+        <hr/>
+        <div id="portfolio-process">
+            <h3 class="sectionTitle">Special Thanks!</h3>
+            <p>Special thanks to my friends Sam Tung, Lauren Tonge, Geoffrey Goh, Saumya Bhatt, Cynthia Todd, and all other friends who gave me incredible technical, design, and writting support.
+            </p>
+            <p>This website wouldn't be done without their help. :)
+            </p>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>	&copy; Yu Qi 2016</p>
+    </footer>
+
+    <script src="../main.js"></script>
+</body>
+
+</html>

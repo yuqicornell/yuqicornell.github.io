@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- @TODO Link the favicon via href -->
+    <!-- <link rel="icon" type="image/png" href="" size="16x16"> -->
+
+    <meta charset="UTF-8">
+    <title>Yu Qi</title>
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab|Noto+Sans' rel='stylesheet' type='text/css' />
+
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/project.css" />
+
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../src/mixitup/src/jquery.mixitup.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <!--Adds a tab icon-->
+    <link rel="shortcut icon" href="../img/thumbnails/yq_small.png">
+</head>
+
+<body>
+    <!--
+
+        Navigation
+
+        -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+         <a class="navbar-brand" href="../index.html"><img id="yqLogo" src="../img/thumbnails/YQ.png" alt="Yu Qi" /></a>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+                <!-- @TODO Insert your logo here 
+                <a class="navbar-brand" href="index.html"><img id="yqLogo" src="img/thumbnails/YQ.png" alt="Yu Qi" /></a>
+            -->
+
+            <!-- This is where you insert your navbar items. Class active and span current should only go around the active tab.-->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#Container">Portfolio</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                    <li><a href="../YuQi_Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--
+
+        Main Content Goes here
+
+    -->
+
+    <div class="jumbotron" id="projectHeader">
+        <div id="welcome">
+            <!-- Type your welcome message here -->
+            <h1 id="projectTitle">Friends in High Places</h1>
+            <p id="projectDesc">Visulizing astronaut Samantha Cristoforetti's orbiting data with Tweet greetings<br> she sent from International Space Station
+        </div>
+
+    </div>
+
+    <div id="bcWrapper">
+        <ol class="breadcrumb">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#Container">Portfolio</a></li>
+            <li class="active">Friends in High Places</li>
+        </ol>
+    </div>
+
+    <!-- Fill in the dots with your projects  Yessir
+        I made some of the thumbnails in orange color, but it can be changed easily if needed-->
+    <div id="mainContent">
+        <div id="overview">
+            <p><span class="overviewCategory">Time:</span> April &ndash; May 2015</p>
+            <p><span class="overviewCategory">Team Size:</span> 3</p>
+            <p><span class="overviewCategory">Role:</span> Front-end developer</p>
+            <p><span class="overviewCategory">Tools:</span> JavaScript (D3.js, JQuery.js), HTML5, CSS3; Bootstrap, Twitter API</p>
+            <p id="d3-demobutton"><span class="overviewCategory">Product: </span><a href="../img/d3/p2/index.html" target="_blank"><img src="../img/d3/interactiveDemo.png" width="150px" alt="interactive demo button"></a>
+                                                              <a href="../img/d3/p2/technicalreport.pdf" target="_blank"><img src="../img/d3/techreport.png" width="150px" alt="technical report button"></a></p>
+        </div>
+
+        <hr />
+
+        <div id="d3-challenge">
+            <h3 class="sectionTitle">Challenge &amp; Ideation</h3>
+            <p>The idea of this project was inspired by “<a href="https://2015.spaceappschallenge.org/challenge/friends-high-places/" target="_blank">International Space Apps Challenge</a>”. After brainstorming, we decided to make a data visualization that shows the location of the International Space Station on a map, giving a specific data point. When the Space Station is at a particular location where Samantha sent a tweet, we would also display that tweet on the interface. 
+            </p>
+            <p>We hence obtained three datasets:
+            </p>
+            <ul id="stepList">
+                <li>The orbiting data from ESA astronaut Samantha Cristoforetti’s trip on the International Space Station from December 2014 to May 2015, about 200,000 data points
+                </li>
+                <li>The second dataset dataset consists of the tweets she sent during her time in the Space Station, which was drawn by using Twitter API, about 2,000 tweets
+                </li>
+                <li>The third dataset is world-50.json which was used to plot the world map.
+                </li>
+            </ul>
+        </div>
+
+        <hr />
+
+        <div id="d3-element">
+            <h3 class="sectionTitle">Design Element </h3>
+            <p><strong>Control panel:</strong> Our control panel of our application allows users to control date, time, auto-play speed, and whether to show current or all orbits of the International Space Station.
+            </p>
+            <p><strong>Tweet panel:</strong> This panel shows the tweets that ESA astronaut Samantha sent at a specific time and location. 
+            </p>
+            <p><strong>World map:</strong> We used the Kavrayskiy VII projection of the world map, which gives us a more accurate world map projection in 2D comparing to Equirectangular and Mercator projections. 
+            </p>
+            <div class="sampleImages">
+                <figure>
+                    <img src="../img/d3/p2/screencapture.png" alt="Screen capture for the data visulization" />
+                    <figcaption><em>Fig 1. Screenshot of the Interface</em></figcaption>
+                </figure>
+            </div>
+            <div class="sampleImages">
+                <figure>
+                    <img src="../img/d3/p2/ssdtrace.jpg" alt="SSD Trace" />
+                    <figcaption><em>Fig 2. A Map of Plotting 200,000 International Space Station (ISS)<br> Orbiting Coordinate Data Points</em></figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <hr />
+
+        <div id="d3-learned">
+            <h3 class="sectionTitle">What I Learned</h3>
+            <p>This project was a more fun way of learning powerful D3.js library. We started with searching for a fun topic that we were all excited about. Going through numerous ideas, we narrowed our ideas down to ones that were both interesting and promising, which means available datasets in this context. After deciding on the direction, we quickly iterated design ideas and began to build.
+            </p>
+            <p>I also specifically learned that as we developed further into the project, I discovered that some original designs needed to be adjusted according to the time and energy constraints. In the meantime, I needed to make sure the adjusted design can still reflect the goals we had about this project, in order to deliver a product with high quality. 
+            </p>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>	&copy; Yu Qi 2016</p>
+    </footer>
+
+    <script src="../main.js"></script>
+</body>
+
+</html>
