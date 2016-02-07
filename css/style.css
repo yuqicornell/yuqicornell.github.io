@@ -121,7 +121,7 @@ button{
 
 #coffeeCup img{
 	padding-top:30px;
-	width:240px;
+	width:45%;
 }
 
 #coffeeCup{
@@ -179,7 +179,7 @@ footer{
 /*shrink class begin*/
 nav.navbar.shrink {
     height: 45px;
-    background: #00356B !important;
+    background: #1976D2 !important;
     /*background: #ffffff !important;*/
 }
 
@@ -228,7 +228,7 @@ li{
 */
 nav li.navActive a{
     color: #ffffff;
-    background-color: #286dc0 !important;
+    background-color: #00356B !important;
     transition: all 0.4s ease;
 }
 
@@ -276,7 +276,7 @@ nav li a{
 */
 nav.shrink li a:hover{
 	color: #ffffff !important;
-    background: #286dc0 !important;/*#63aaff #286dc0*/
+    background: #00356B !important;/*#63aaff #286dc0*/
     transition: all 0.13s linear;
 }
 
@@ -388,6 +388,12 @@ a, a:hover{
     }
     #profilePicture{
         padding-right: 30%
+    }
+    #profileQuote{
+        padding:10px;
+    }
+    .filter{
+        padding:15px;
     }
     ul.nav.navbar-nav{
         margin: 0px !important;
