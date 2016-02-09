@@ -80,6 +80,30 @@ button{
 	display:inline-block;
 }
 
+@media(max-width:600px) {
+    .mix{
+        width:80%;
+    } 
+}
+
+@media(min-width:600px) {
+    .mix{
+        width:33%;
+    } 
+}
+
+@media(min-width:700px) {
+    .mix{
+        width:37%;
+    } 
+}
+
+@media(min-width:992px) {
+    .mix{
+        width:25%;
+    } 
+}
+
 .thumbnail_descrip{
 	padding-top:10px;
 }
