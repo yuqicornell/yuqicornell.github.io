@@ -3,7 +3,7 @@ body{
 }
 
 #titleWrapper{
-	background-color: transparent !important;
+	background-color: white !important;
 	border-bottom: 1px solid #555;
 	padding-top:216px;
 	padding-bottom:126px;
@@ -191,7 +191,7 @@ footer{
 
 .navbar{
 	height:90px;
-	border-bottom:1px solid #555 !important;
+	border-bottom:0px solid #555 !important;
 	background-color:white;
     opacity: .95;
     
