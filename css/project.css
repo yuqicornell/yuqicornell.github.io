@@ -71,6 +71,10 @@ img{
     max-width: 100%;
 }
 
+.sampleImages.starup_paper img{
+    max-width: 50%;
+}
+
 .sampleImages#designlog img{
     max-width: 100%;
 }
