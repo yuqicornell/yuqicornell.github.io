@@ -66,6 +66,9 @@ img{
 .sampleImages#keeponbot img{
     max-width: 50%;
 }
+.sampleImages#keeponfreedom img{
+    max-width: 70%;
+}
 
 .sampleImages#sketchUI img{
     max-width: 100%;
