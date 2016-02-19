@@ -98,40 +98,60 @@
     <div id="mainContent">
         <div id="overview">
             <p><span class="overviewCategory">Time:</span> May &ndash; December 2015</p>
-            <p><span class="overviewCategory">Team Size:</span> 5</p>
-            <p><span class="overviewCategory">Role:</span> UX Researcher Arduino Developer</p>
+            <p><span class="overviewCategory">Team Size:</span> Myself with Advising Professor Malte Jung</p>
+            <p><span class="overviewCategory">Role:</span> User Researcher, Arduino Developer, Project Manager</p>
             <p><span class="overviewCategory">Methodology:</span> Literature review, User Testing, User Interviews, Behavior Mapping, Design Thinking, Prototyping, Wizard of Oz, Arduino Programming, 3-D Printing</p>
             <p><span class="overviewCategory">Tools:</span> Pen &amp; paper, Arduino</p>
-            <p><span class="overviewCategory">Product:</span> A fully functional Keepon robot and a complete exploratory human-robot interaction study.</p>
+            <p><span class="overviewCategory">Product:</span> A fully functional Keepon robot that we have been used to running study and collecting data. A complete exploratory human-robot interaction study</p>
         </div>
 
         <hr />
 
         <div id="designObjectives">
             <h3 class="sectionTitle">Overview</h3>
-            <p>This project is to design human-robot interactions using socially assistive robot - Keepon. The purpose of this exploratory study is to see how robot’s empathy behaviors can help college students regulate their emotions.
+            <p>This project was to design human-robot interactions using socially assistive robot - Keepon. The purpose of this exploratory study was to see how a robot’s “empathy behaviors” can help college students regulate their emotions.
             </p>
         </div>
 
         <hr />
 
-        <div id="Robot Building">
-            <h3 class="sectionTitle">Keepon Robot</h3>
-            <p>For this study, we used an <a href="http://hennyadmoni.com/keepon/">open-source robot - Keepon</a>. One reason we select this robot is because it has great degree of freedoms in movement. With Keepon, we can easily simulate human behaviors, such as nodding, shaking head,  idly looking, and breath. Keepon is also capable in conveying human emotions, such as happy, sad, and excitement. 
+        <div id="MyRole">
+            <h3 class="sectionTitle">My Roles and Process</h3>
+            <p>This was an individual research project with Dr. Malte Jung, and I had many roles throughout the project. My roles: 
             </p>
-            
-            <h4 class="procedure"></h4>
-            <p>Under construction 02/18/2016</p>
+            <ol>
+                <li><strong>User Researcher:</strong> At the beginning, I studied how people express empathy behaviors to each other, and my goal was to map human behaviors to Keepon’s movement. I interviewed 4 colleagues. For each interview, I asked my interviewee to listen to a sad story of my own without any verbal expressions. In other words, my interviewees could only use their body language to express empathy to my sad story. Later, each interviewee received an in-depth interview.</br>
+                I learned different behaviors people used for expressing empathy. One example is that people might use small nods to indicate they were listening but big nods when they heard an important part of the story. Other examples included how people idly look around and how people move their bodies.</br></br></li>
+                <li><strong>Arduino Developer:</strong> I was the main developer throughout the study. I worked with the open source code and modified it for our purpose. Although I am not trained as a developer, I love solving challenging problems, and it is very rewarding to see my robot moving according to my code. With well documented online Arduino tutorials and my knowledge in C++, I was able to write reliable Arduino programs. Here is the GitHub repository for this project: <a href="https://github.com/yuqicornell/KeeponRobot" target="_blank">github.com/yuqicornell/KeeponRobot</a>.</br></br></li>
+                <li><strong>Project Manager:</strong> Later in this project, I had an undergraduate team working with me. At different stages, I defined and communicated project objectives with my team. I also coordinated the project schedule and progress between my team and advising professor. Furthermore, I oversaw the execution of each experiment session, collected information, and led regular team discussions. 
+                </li>
+            </ol>
+        </div>
+
+        <hr />
+
+        <div id="RobotBuilding">
+            <h3 class="sectionTitle">Keepon Robot</h3>
+            <p>For this study, we used an <a href="http://hennyadmoni.com/keepon/" target="_blank">open-source robot - Keepon</a>. One reason is because it has great degrees of freedom in regards to movement. We can easily simulate human behaviors with Keepon, such as nodding, shaking head,  idly looking, and breathing. Through those behaviors, Keepon is also capable of conveying human emotions, like happy, sad, excitement, etc.
+            </p>
             <div class="sampleImages" id="keeponfreedom">
                 <figure>
                     <img src="../img/keepon/mykeeponDOF.png" alt="Keepon movement DOF" />
                     <figcaption><em>Fig 1. Illustration of four degrees of freedom in Keepon movement</em></figcaption>
                 </figure>
             </div>
+            <h4 class="procedure">3D Printing</h4>
+            <p>The process of building a Keepon robot was lots of fun! I 3D printed all the parts that are needed. Then, I modified the Keepon from a <a href="http://www.mykeepon.com/" target="_blank">toy version</a> to a robot that I can program.</p>
+            <div class="sampleImages">
+                <figure>
+                    <img src="../img/keepon/3dPrint.png" alt="3d printing" />
+                    <figcaption><em>Fig 2. 3D Printer and 3D Printed Parts</em></figcaption>
+                </figure>
+            </div>
             <div class="sampleImages" id="keeponbot">
                 <figure>
                     <img src="../img/keepon/finishedKeepon.jpg" alt="Finished Keepon" />
-                    <figcaption><em>Fig 2. Finished Keepon robot</em></figcaption>
+                    <figcaption><em>Fig 3. Finished Keepon robot</em></figcaption>
                 </figure>
             </div>
             <!--<h4 class="procedure">Define Problem</h4>
@@ -147,9 +167,8 @@
 
         <div id="sciencenter">
             <h3 class="sectionTitle">Keepon’s interaction with kids in Sciencenter, Ithaca NY</h3>
-            <p>We presented our robot to children around 10 years old in Sciencenter, Ithaca. It is an educational 
-                activity of teaching children robotics, but the enthusiasm children showed towards Keepon robot gave 
-                us great confidence moving forward. </p>
+            <p>I presented our robot to children around 10 years old in Sciencenter, Ithaca. It was an educational activity of teaching children robotics, but the enthusiasm children showed towards the Keepon robot gave us great confidence moving forward. 
+            </p>
             <div class="sampleImages scaled">
                 <figure>
                     <img src="../img/keepon/sciencenter.jpg" alt="children interaction with Keepon" />
@@ -168,11 +187,9 @@
 
         <div id="labStudy">
             <h3 class="sectionTitle">Lab User Study</h3>
-            <p>We also designed user studies in laboratory setting. Experimenters controlled Keepon 
-                from another room using Wizard of Oz method. By observing user’s behavior, experimenter 
-                issues Keepon corresponding movements commands. We used different psychological and 
-                behavioral measurements to evaluate the emotional responses of our participants.
+            <p>We also designed user studies in laboratory setting. Experimenters controlled Keepon from another room using the Wizard of Oz method. By observing users’ behavior, the experimenter issues corresponding movement commands to Keepon. We used different psychological and behavioral measurements to evaluate the emotional responses of our participants.
             </p>
+            <p><em>* The study has not been published, and I have omitted confidential study information in this project description.</em></p>
             <!--<p>Illustration here:
             </p>-->
         </div>
