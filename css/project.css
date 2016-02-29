@@ -127,6 +127,10 @@ img{
 .btpics{
     width: 500px;
 }
+
+#starup-ur ul{
+    padding-top: 0px;
+}
 /*
 .carousel-example-generic{
     max-width: 400px;
