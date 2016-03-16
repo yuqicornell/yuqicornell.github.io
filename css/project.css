@@ -162,5 +162,12 @@ img{
     padding-left: 5%;
     padding-bottom: 20px;
 }
+.ws_row img:hover{
+	opacity: 0.6;
+    transition: all 0.23s linear;
+}
+.ws_row{
+    cursor: pointer;
+}
 
 
