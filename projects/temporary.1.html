@@ -3,39 +3,143 @@
 <head>
   <meta charset="utf-8">
   <title>submit demo</title>
-  <style>
-  p {
-    margin: 0;
-    color: blue;
-  }
-  div,p {
-    margin-left: 10px;
-  }
-  span {
-    color: red;
-  }
-  </style>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
  
 <p>Type 'correct' to validate.</p>
-<form action="javascript:alert( 'success!' );">
+<form id="gift" method="POST" action="php/send.php">
   <div>
-    <input type="text">
+    <fieldset class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" name ="firstName" class="form-control" id="fn">
+            </fieldset>
+             <fieldset class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" class="form-control" id="ln">
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                <small class="text-muted">We'll never share your email with anyone else.</small>
+            </fieldset>
+            <fieldset>
+            <lable for="gender">Gender: </lable>
+            <div class="radio-inline">
+                <label>
+                    <input type="radio" name="female" id="female" value=1>
+                    Female
+                </label>
+            </div>
+            <div class="radio-inline">
+                <label>
+                    <input type="radio" name="male" id="male" value=2>
+                    Male
+                </label>
+            </div>
+            </fieldset>
+            <fieldset>
+            <label for="Q1">1. When I think to myself, I think in words.</label><br>
+                <label class="c-input c-radio">
+                    <input id="q1-option1" name="Q1-radio" type="radio" value=0>
+                    <span class="c-indicator"></span>
+                    Very much like me 
+                </label>
+                <label class="c-input c-radio">
+                    <input id="q1-option2" name="Q1-radio" type="radio" value=1>
+                    <span class="c-indicator"></span>
+                    Like me
+                </label>
+                <label class="c-input c-radio">
+                    <input id="q1-option2" name="Q1-radio" type="radio" value=2>
+                    <span class="c-indicator"></span>
+                    Neutral
+                </label>
+                <label class="c-input c-radio">
+                    <input id="q1-option2" name="Q1-radio" type="radio" value=3>
+                    <span class="c-indicator"></span>
+                    Unlike me
+                </label>
+                <label class="c-input c-radio">
+                    <input id="q1-option2" name="Q1-radio" type="radio" value=4>
+                    <span class="c-indicator"></span>
+                    Very much unlike me
+                </label>
+            </fieldset>
+            <fieldset>
+            <label for="Q2">2. When I think to myself, I think in pictures.</label><br>
+                <label class="c-input c-radio">
+                    <input id="q2-option1" name="Q2-radio" type="radio" value=4>
+                    <span class="c-indicator"></span>
+                    Very much like me 
+                </label>
+                <label class="c-input c-radio">
+                    <input id="q2-option2" name="Q2-radio" type="radio" value=3>
+                    <span class="c-indicator"></span>
+                    Like me
+                </label>
+                <label class="c-input c-radio">
+                    <input id="q2-option3" name="Q2-radio" type="radio" value=2>
+                    <span class="c-indicator"></span>
+                    Neutral
+                </label>
+                <label class="c-input c-radio">
+                    <input id="q2-option4" name="Q2-radio" type="radio" value=1>
+                    <span class="c-indicator"></span>
+                    Unlike me
+                </label>
+                <label class="c-input c-radio">
+                    <input id="q2-option5" name="Q2-radio" type="radio" value=0>
+                    <span class="c-indicator"></span>
+                    Very much unlike me
+                </label>
+            </fieldset>
+            <fieldset>
+            <label for="Q3">3. I can rotate an object 360 degrees and see it backwards, upside down or sideways in my mind's eye.</label><br>
+                <label class="c-input c-radio">
+                    <input id="q3-option1" name="Q3-radio" type="radio" value=4>
+                    <span class="c-indicator"></span>
+                    Very much like me 
+                </label>
+                <label class="c-input c-radio">
+                    <input id="q3-option2" name="Q3-radio" type="radio" value=3>
+                    <span class="c-indicator"></span>
+                    Like me
+                </label>
+                <label class="c-input c-radio">
+                    <input id="q3-option3" name="Q3-radio" type="radio" value=2>
+                    <span class="c-indicator"></span>
+                    Neutral
+                </label>
+                <label class="c-input c-radio">
+                    <input id="q3-option4" name="Q3-radio" type="radio" value=1>
+                    <span class="c-indicator"></span>
+                    Unlike me
+                </label>
+                <label class="c-input c-radio">
+                    <input id="q3-option5" name="Q3-radio" type="radio" value=0>
+                    <span class="c-indicator"></span>
+                    Very much unlike me
+                </label>
+            </fieldset>
     <input type="submit">
   </div>
 </form>
-<span></span>
+<div id="displayResult" style="display: none">
+    Name: <span id="display-name"></span><br>
+    Email: <span id="display-email"></span><br>
+    Visioning: <span id="display-visioning"></span><br>
+</div>
  
 <script>
-$( "form" ).submit(function( event ) {
-  if ( $( "input:first" ).val() === "correct" ) {
-    $( "span" ).text( "Validated..." ).show();
-    return;
-  }
- 
-  $( "span" ).text( "Not valid!" ).show().fadeOut( 1000 );
+$('#gift').submit(function( event ) {
+    var fn = $('#fn').val() + " " + $('#ln').val();
+    var visioning = parseInt($('input[name=Q1-radio]:checked').val()) 
+                    + parseInt($('input[name=Q2-radio]:checked').val()) 
+                    + parseInt($('input[name=Q3-radio]:checked').val());
+    $("#displayResult").show();
+    $( "#display-name" ).text(fn).show();
+    $( "#display-visioning" ).text(visioning).show();
   event.preventDefault();
 });
 </script>
